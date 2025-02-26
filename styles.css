@@ -90,3 +90,9 @@ footer {
 footer p {
     margin: 0;
 }
+
+#CG2logo {
+    width: 75px;
+    align-self: left
+    ;
+}
