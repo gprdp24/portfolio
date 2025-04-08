@@ -1,230 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>JavaScript Developer Profile</title>
-        <link rel="stylesheet" href="styles.css" />
-    </head>
-    <body>
-        <div class="GerrySection">
-            <header>
-                <div class="container">
-                    <h1>
-                        <img src="resources/CG2 logo.png" alt="" id="CG2logo" />
-                        Cool Guy Squared
-                    </h1>
-                    <p>JavaScript Developer</p>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>JavaScript Developer Profile</title>
+		<link rel="stylesheet" href="styles.css" />
+		<link
+			rel="stylesheet"
+			href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+		/>
+	</head>
+	<body>
+            <div class="theme-toggle-container">
+        <label class="switch">
+            <input type="checkbox" id="themeToggle">
+            <span class="slider round"></span>
+        </label>
+        <span id="themeLabel">Light Mode</span>
+    </div>
+		<header>
+			<div class="container">
+				<h1>
+					<img src="resources/CG2 logo.png" alt="" id="CG2logo" />
+					
+				</h1>
+				<p>Cool Guy Squared</p>
+			</div>
+		</header>
+		<div class="GerrySection">
+			<section id="about">
+				<div class="container">
+					<h2>About Gerry</h2>
+            <div id="accordion">
+                <h3>Bio</h3>
+                <div>
+                    <p>Gerry was born in 1977 and holds a diploma in Engineering Design and Drafting Technology. After 18 years in the oilfield, he transitioned into computer programming and is currently pursuing formal education in the field.</p>
                 </div>
-            </header>
-
-            <section id="about">
-                <!-- we need more comments! -->
-                <div class="container">
-                    <h2>About Gerry</h2>
-                    <p>
-                        Gerry was born in 1977 he holds a college diploma in
-                        Engineering Design and Drafting Technology, which he
-                        only did as a career for 5 years before working in the
-                        oilfield for 18 years. Wanting to change careers Gerry's
-                        interest shifted toward computer programming, prompting
-                        him to embark on a journey of self-learning to explore
-                        this new field. His growing enthusiasm for coding
-                        eventually led him to pursue formal education in
-                        computer programming, highlighting his dedication to
-                        adapting and expanding his skill set in an ever-evolving
-                        technological landscape.
-                    </p>
+                <h3>Fun Facts</h3>
+                <div>
+                    <ul>
+                        <li>Enjoys sci-fi books</li>
+                        <li>Loves tinkering with old tech</li>
+                        <li>Dreams of building a game one day</li>
+                    </ul>
                 </div>
-            </section>
-
-            <section id="skills">
-                <!-- hide beans here -->
-                <div class="container">
-                    <h2>Skills</h2>
+            </div>
+        </div>
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div id="skills-tabs">
+                <ul>
+                    <li><a href="#tabs-1">Languages</a></li>
+                    <li><a href="#tabs-2">Tools</a></li>
+                </ul>
+                <div id="tabs-1">
                     <ul>
                         <li>JavaScript</li>
                         <li>HTML5 & CSS3</li>
                         <li>Python</li>
                         <li>C#</li>
                         <li>Java</li>
-                        <li>MySQL</li>
                     </ul>
                 </div>
-            </section>
-
-            <section id="projects">
-                <div class="container">
-                    <h2>Projects</h2>
-                    <div class="project">
-                        <h3>Project 1: Password Manager Keeper</h3>
-                        <p>
-                            I created a desktop password generator/keeper.
-                            manager app. The app was developed by QT Designer
-                            and python. Functions of the app include generating.
-                            and storing a random password with letter, numbers
-                            and symbols. When the add button is clicked the form
-                            clears, the password is added to a .Json file. The
-                            search function will allows to look for a password.
-                            by the website entered when creating the password.
-                        </p>
-                    </div>
-                    <div class="project">
-                        <h3>Project 2: Card Counter</h3>
-                        <p>
-                            With HTML, CSS, and JS self self-learning I
-                            developed a card counting web app, which would count
-                            cards to win in Blackjack. Radio buttons for the
-                            number of decks being used, then the user would
-                            input the cards delt to himself and the dealer. With
-                            JavaScript I developed algorithms to count the cards
-                            and let the user know when to up or down their bet.
-                            It was meant for people who know at least the basic
-                            strategy for playing Blackjack.
-                        </p>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <div class="ChaseSection">
-            <section id="about">
-                <div class="container">
-                    <h2>About Chase</h2>
-                    <p>
-                        Chase is a professinal communicator. He has spent a good
-                        portion of his life working in radio broadcasting, doing
-                        everyting from working on street teams, to hosting his
-                        own shows. He also has done work for many different
-                        podcasts, including hosting and producing much of the
-                        content for The Wildie West, a new podcast project that
-                        has helped to create dialogue for Alberta's Mountain
-                        Horses.
-                    </p>
-                </div>
-            </section>
-
-            <section id="skills">
-                <div class="container">
-                    <h2>Skills</h2>
+                <div id="tabs-2">
                     <ul>
-                        <li>
-                            Used JavaScript in order to create this website
-                            (still needs to be done)
-                        </li>
-                        <li>
-                            Used HTML5 & CSS3 in order to create several
-                            different websites including this one
-                        </li>
-                        <li>
-                            Used Python to develop a Role-Playing Game with a
-                            couple of friends
-                        </li>
-                        <li>
-                            Used C# to develop several applications, including
-                            one that manages, stores and generates passwords for
-                            different websites.
-                        </li>
-                        <li>"Knows" Java</li>
-                        <li>
-                            Used MySQL to create a database for an adventurer's
-                            guild in a fantaasy setting.
-                        </li>
-                        <li>
-                            Is proficient in presenting, was a radio personality
-                            for several years, and is the host of many Podcasts,
-                            including The Wildie West
-                        </li>
-                        <li>Has worked in commission-based sales in order</li>
-                        <li>Good at interacting with customers</li>
+                        <li>MySQL</li>
+                        <li>VS Code</li>
+                        <li>Git & GitHub</li>
+                        <li>Figma</li>
                     </ul>
                 </div>
-            </section>
-
-            <section id="projects">
-                <div class="container">
-                    <h2>Projects</h2>
-                    <div class="project">
-                        <h3>Project 1: Totally Manageable New Tavern</h3>
-                        <p>
-                            I was responsible for creating the story and
-                            implementing the code created by one of my partners
-                            in order to make the skeleton structure of the code
-                            operate as we had intended. I also used loops in
-                            order to give the player many different options for
-                            navigation while they were playing the game. We also
-                            were ready to implement different weapons and armor
-                            and more combat options in general, but we ran out
-                            of time before we could fully test it.
-                        </p>
-                    </div>
-                    <div class="project">
-                        <h3>Project 2: The Wildie West</h3>
-                        <p>
-                            I have been responsible for interviewing guests as
-                            well as set up and tear down of remote studios in
-                            order to get all of the recoring need for the
-                            podcast. I have also done a little bit of video and
-                            sound editing, as well as script editing for the
-                            podcast in order to make the script sound more fluid
-                            and conversational. Chase has spent more time on
-                            this project than any other he has been a part of,
-                            and is actually seeing a ton of success with it,
-                            hoping to even get monetized by the start of next
-                            season in January of next year.
-                        </p>
-                    </div>
-                </div>
-            </section>
+            </div>
         </div>
+    </section>
 
-    <div class="GageSection">
-    
-        <section id="about">
-            <div class="container">
-                <h2>About Gage</h2>
-                <p>Gage is a jack of all trades with an assortment of random, unrelated things he's good at that have very little relation to eachother, but with a bit more fo a focus on programming and cooking.</p>
-            </div>
-        </section>
-    
-        <section id="skills">
-            <div class="container">
-                <h2>Skills</h2>
-                <ul>
-                    <li>Programming</li>
-                    <li>Dog Training</li>
-                    <li>Snowmobiling</li>
-                    <li>Having the best subway order</li>
-                    <li>Cooking</li>
-                </ul>
-            </div>
-        </section>
-    
-        <section id="projects">
-            <div class="container">
-                <h2>Projects and Experiences</h2>
-                <div class="project">
-                    <h3>Experience 1: Klondike Rib and Salmon</h3>
-                    <p>My favourite job i've ever worked, Klondike Rib and Salmon is small restaurant in the heart of the yukon. The building itself is over 100 years old and has been passed down to different families throughout its lifetime. In the summer after I graduated from highschool
-                        I started working at Klondike Rib and Salmon as both a dishwasher and prep coook. The restaurant is seasonal and a tourist attraction, making every waking moment of working their a put you into  astate of panic with how busy it is. which was honestly my favourite part, since I always had something to do.
-                        I learned to work under pressure and made amazing friends during my time at Klondike Rib and Salmon and definitely hope to go back there sometime in the future, even if its just for a single summer.
-                    </p>
-                </div>
-                <div class="project">
-                    <h3>Experience 2: Dog Training</h3>
-                    <p>My Mom is a professional dog trainer who spent multiple years in different European countries, such as Hungary, learning everything there is to know about dog training. Since its such a big part of her life, it became a small part of mine as well since I've been surrounded by it since I was born. 
-                        I've won several dog shows over the years, especially when I was younger and had less of my own things going on. Now, while I'm currently focusing on programming I still occasionally go to dog shows with my Mom and help her when training her dogs and taking care of other peoples dogs.
-                    </p>
-                </div>
-            </div>
-        </section>
-    </div>
-   
+			<section id="projects">
+				<div class="container">
+					<h2>Projects</h2>
+					<div class="project">
+						<h3>Project 1: Password Manager Keeper</h3>
+						<p>
+							I created a desktop password generator/keeper.
+							manager app. The app was developed by QT Designer
+							and python. Functions of the app include generating.
+							and storing a random password with letter, numbers
+							and symbols. When the add button is clicked the form
+							clears, the password is added to a .Json file. The
+							search function will allows to look for a password.
+							by the website entered when creating the password.
+						</p>
+					</div>
+					<div class="project">
+						<h3>Project 2: Card Counter</h3>
+						<p>
+							With HTML, CSS, and JS self self-learning I
+							developed a card counting web app, which would count
+							cards to win in Blackjack. Radio buttons for the
+							number of decks being used, then the user would
+							input the cards delt to himself and the dealer. With
+							JavaScript I developed algorithms to count the cards
+							and let the user know when to up or down their bet.
+							It was meant for people who know at least the basic
+							strategy for playing Blackjack.
+						</p>
+					</div>
+				</div>
+			</section>
+		</div>
 
-        <footer>
-            <div class="container">
-                <p>&copy; 2025 Cool Guy Squared Productions. All rights reserved.</p>
-            </div>
-        </footer>
-    </body>
+		<div class="ChaseSection">
+			<section id="about">
+				<div class="container">
+					<h2>About Chase</h2>
+					<p>
+						Chase is a professinal communicator. He has spent a good
+						portion of his life working in radio broadcasting, doing
+						everyting from working on street teams, to hosting his
+						own shows. He also has done work for many different
+						podcasts, including hosting and producing much of the
+						content for The Wildie West, a new podcast project that
+						has helped to create dialogue for Alberta's Mountain
+						Horses.
+					</p>
+				</div>
+			</section>
+
+			<section id="skills">
+				<div class="container">
+					<h2>Skills</h2>
+					<ul>
+						<li>
+							Used JavaScript in order to create this website
+							(still needs to be done)
+						</li>
+						<li>
+							Used HTML5 & CSS3 in order to create several
+							different websites including this one
+						</li>
+						<li>
+							Used Python to develop a Role-Playing Game with a
+							couple of friends
+						</li>
+						<li>
+							Used C# to develop several applications, including
+							one that manages, stores and generates passwords for
+							different websites.
+						</li>
+						<li>"Knows" Java</li>
+						<li>
+							Used MySQL to create a database for an adventurer's
+							guild in a fantaasy setting.
+						</li>
+						<li>
+							Is proficient in presenting, was a radio personality
+							for several years, and is the host of many Podcasts,
+							including The Wildie West
+						</li>
+						<li>Has worked in commission-based sales in order</li>
+						<li>Good at interacting with customers</li>
+					</ul>
+				</div>
+			</section>
+
+			<section id="projects">
+				<div class="container">
+					<h2>Projects</h2>
+					<div class="project">
+						<h3>Project 1: Totally Manageable New Tavern</h3>
+						<p>
+							I was responsible for creating the story and
+							implementing the code created by one of my partners
+							in order to make the skeleton structure of the code
+							operate as we had intended. I also used loops in
+							order to give the player many different options for
+							navigation while they were playing the game. We also
+							were ready to implement different weapons and armor
+							and more combat options in general, but we ran out
+							of time before we could fully test it.
+						</p>
+					</div>
+					<div class="project">
+						<h3>Project 2: The Wildie West</h3>
+						<p>
+							I have been responsible for interviewing guests as
+							well as set up and tear down of remote studios in
+							order to get all of the recoring need for the
+							podcast. I have also done a little bit of video and
+							sound editing, as well as script editing for the
+							podcast in order to make the script sound more fluid
+							and conversational. Chase has spent more time on
+							this project than any other he has been a part of,
+							and is actually seeing a ton of success with it,
+							hoping to even get monetized by the start of next
+							season in January of next year.
+						</p>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div class="GageSection">
+			<section id="about">
+				<div class="container">
+					<h2>About Gage</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Harum, ex. Commodi odit non rem aut ducimus voluptate,
+						deleniti nobis, similique possimus autem ratione, eum
+						alias dignissimos ea nulla cumque provident. Voluptatum
+						consequatur delectus quae maxime, ratione facere sunt
+						sed eos eaque sit alias cumque nam repudiandae molestiae
+						perferendis deserunt voluptatem saepe nemo numquam nulla
+						eligendi. Error hic similique officia voluptatem!
+					</p>
+				</div>
+			</section>
+
+			<section id="skills">
+				<div class="container">
+					<h2>Skills</h2>
+					<ul>
+						<li>Programming</li>
+						<li>Dog Training</li>
+						<li>Snowmobiling</li>
+						<li>Having the best subway order</li>
+						<li>Cooking</li>
+					</ul>
+				</div>
+			</section>
+
+			<section id="projects">
+				<div class="container">
+					<h2>Projects and Experiences</h2>
+					<div class="project">
+						<h3>Project 1: Something Cool</h3>
+						<p>
+							Lorem ipsum, dolor sit amet consectetur adipisicing
+							elit. Architecto quibusdam qui, voluptas tenetur
+							quisquam minima sed quae explicabo laboriosam illo
+							repudiandae, accusamus veniam officia, maxime eaque
+							vero ut praesentium tempore!
+						</p>
+					</div>
+					<div class="project">
+						<h3>Project 2: Something Coo App</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Tempora illo dolor nisi hic inventore at,
+							consectetur ipsa a deserunt! Laudantium delectus
+							dolorem id nam nesciunt voluptatem tenetur, ratione
+							impedit exercitationem.
+						</p>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<footer>
+			<div class="container">
+				<p>&copy; 2025 Cool Guy Productions. All rights reserved.</p>
+			</div>
+		</footer>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="script.js"></script>
+	</body>
 </html>
