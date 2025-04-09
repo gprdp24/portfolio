@@ -8,7 +8,7 @@ $(document).ready(function () {
 	});
 
 	// === jQuery UI Widgets ===
-	$( '#accordion' ).accordion( {
+	$( '.accordion' ).accordion( {
 		collapsible: true,
 	});
 	$('#skills-tabs').tabs();
