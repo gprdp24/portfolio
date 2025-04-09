@@ -86,7 +86,7 @@
 			<section id="skills-gerry">
 				<div class="container ger-tabs">
 					<h2>Skills</h2>
-					<div id="skills-tabs">
+					<div class="skills-tabs">
 						<ul>
 							<li><a href="#tabs-1">Languages</a></li>
 							<li><a href="#tabs-2">Tools</a></li>
@@ -189,11 +189,15 @@
 			</section>
 		</div>
 
-		<div class="ChaseSection">
+		<!-- create a div to contain all info pertaining to Chase -->
+        <div class="ChaseSection">
+            <!-- this will be the about section for Chase -->
 			<section id="about-chase">
 				<div class="container">
 					<h2>About Chase</h2>
+                    <!-- implement a class to create a reusable accordion -->
                     <div class="accordion">
+                        <!-- this will be the first accordion tab -->
                         <h3>Bio</h3>
                         <div>
                             <p>
@@ -207,6 +211,7 @@
                                 Horses.
                             </p>
                         </div>
+                        <!-- this will be the second accordion tab -->
                         <h3>Fun Facts</h3>
                         <div>
                             <ul>
@@ -219,47 +224,47 @@
 				</div>
 			</section>
 
-			<section id="skills-chase">
+			<!-- create a section for Chase's skills -->
+            <section id="skills-chase">
 				<div class="container">
 					<h2>Skills</h2>
-					<ul>
-						<li>
-							Used JavaScript in order to create this website
-							(still needs to be done)
-						</li>
-						<li>
-							Used HTML5 & CSS3 in order to create several
-							different websites including this one
-						</li>
-						<li>
-							Used Python to develop a Role-Playing Game with a
-							couple of friends
-						</li>
-						<li>
-							Used C# to develop several applications, including
-							one that manages, stores and generates passwords for
-							different websites.
-						</li>
-						<li>"Knows" Java</li>
-						<li>
-							Used MySQL to create a database for an adventurer's
-							guild in a fantaasy setting.
-						</li>
-						<li>
-							Is proficient in presenting, was a radio personality
-							for several years, and is the host of many Podcasts,
-							including The Wildie West
-						</li>
-						<li>Has worked in commission-based sales in order</li>
-						<li>Good at interacting with customers</li>
-					</ul>
+                    <!-- create a class in order to implement reusable tabs -->
+                    <div class="skills-tabs">
+                        <!-- the tabs to be clicked by the user of the website -->
+                        <ul>
+                            <li><a href="#lang-tab">Languages</a></li>
+                            <li><a href="#other-tab">Other Skills</a></li>
+                        </ul>
+                        <!-- what the user sees after clicking on the first tab -->
+                        <div id="lang-tab">
+                            <ul>
+                                <li>Javascript</li>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>Python</li>
+                                <li>C#</li>
+                                <li>Java</li>
+                            </ul>
+                        </div>
+                        <!-- what the user sees after clicking on the second tab -->
+                        <div id="other-tab">
+                            <ul>
+                                <li>MySQL</li>
+                                <li>Proficient in presenting.</li>
+                                <li>Worked comission based sales for years.</li>
+                                <li>Proficient in interacting with customers.</li>
+                                <li>Spent many years working in radio broadcasting.</li>
+                                <li>Is able to build a professional home studio for recording.</li>
+                            </ul>
+                        </div>
+                    </div>
 				</div>
 			</section>
 
 			<section id="projects-chase">
 				<div class="container">
 					<h2>Projects</h2>
-					<div class="project">
+					<div id="chase-tmnt" class="project fade-in-on-scroll">
 						<h3>Project 1: Totally Manageable New Tavern</h3>
 						<p>
 							I was responsible for creating the story and

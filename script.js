@@ -11,7 +11,7 @@ $(document).ready(function () {
 	$( '.accordion' ).accordion( {
 		collapsible: true,
 	});
-	$('#skills-tabs').tabs();
+	$('.skills-tabs').tabs();
 
 	// === jQuery UI Interaction ===
 	$('#draggable').draggable();

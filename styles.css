@@ -236,6 +236,17 @@ section ul li {
     background-color: #78bef8;
 }
 
+#chase-tmnt {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+cursor: pointer;
+}
+
+#chase-tmnt:hover {
+    transform: scale(1.03);
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+background-color: #78bef8;
+}
+
 .fade-in-on-scroll {
 	opacity: 0;
 	transform: translateY(20px);
