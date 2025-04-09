@@ -14,6 +14,12 @@ body {
     padding: 2em;
 }
 
+.ger-accord, .ger-tabs {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
 h1, h2, h3 {
     margin-bottom: 0.5em;
 }
@@ -49,7 +55,7 @@ header p {
     font-size: 18px;
     color: #77aaff;
 }
-
+/* 
 header.sticky {
     position: sticky;
     top: 0;
@@ -57,7 +63,7 @@ header.sticky {
     padding: 1em 0;
     border-bottom: 1px solid #ccc;
     background-color: inherit;
-}
+} */
 
 /* === Light/Dark Theme === */
 body.dark-mode {
@@ -135,10 +141,6 @@ button:hover, a:hover {
     transform: scale(1.05);
 }
 
-img:hover {
-    opacity: 0.85;
-    transform: scale(1.03);
-}
 
 /* === Fade-in on Scroll === */
 .fade-in {
@@ -223,6 +225,28 @@ section ul li {
     margin-top: 0;
 }
 
+#proj-one {
+    	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	cursor: pointer;
+}
+
+#proj-one:hover {
+    	transform: scale(1.03);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: #78bef8;
+}
+
+.fade-in-on-scroll {
+	opacity: 0;
+	transform: translateY(20px);
+	transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-on-scroll.visible {
+	opacity: 1;
+	transform: translateY(0);
+}
+
 /* === Footer === */
 footer {
     background: #333;
@@ -240,4 +264,43 @@ footer p {
 #CG2logo {
     width: 75px;
     align-self: left;
+}
+
+.ui-accordion .ui-accordion-content {
+    height: auto !important;
+}
+
+/* Optional: spacing/styling for the slick container */
+.slick-carousel {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+/* Optional: round corners of slick images */
+.slick-slide img {
+	border-radius: 12px;
+}
+
+/* Optional: style slick dots */
+.slick-dots li button:before {
+	color: #2196f3; /* Customize dot color */
+	font-size: 12px;
+}
+
+.slick-dots li.slick-active button:before {
+	color: #1976d2; /* Active dot */
+}
+
+/* Optional: style slick arrows */
+.slick-prev, .slick-next {
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	z-index: 2;
+}
+
+.slick-prev:before, .slick-next:before {
+	color: white;
+	font-size: 20px;
 }

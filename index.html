@@ -4,6 +4,10 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>JavaScript Developer Profile</title>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
 		<link rel="stylesheet" href="styles.css" />
 		<link
 			rel="stylesheet"
@@ -13,90 +17,156 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
 		/>
+		<!-- Slick CSS -->
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+		/>
 	</head>
 	<body>
-            <div class="theme-toggle-container">
-        <label class="switch">
-            <input type="checkbox" id="themeToggle">
-            <span class="slider round"></span>
-        </label>
-        <span id="themeLabel">Light Mode</span>
-    </div>
+		<div class="theme-toggle-container">
+			<label class="switch">
+				<input type="checkbox" id="themeToggle" />
+				<span class="slider round"></span>
+			</label>
+			<span id="themeLabel">Light Mode</span>
+		</div>
 		<header>
 			<div class="container">
-				<h1>
-					<img src="resources/CG2 logo.png" alt="" id="CG2logo" />
-					
-				</h1>
+				<img src="resources/CG2 logo.png" alt="" id="CG2logo">
 				<p>Cool Guy Squared</p>
 			</div>
 		</header>
 		<div class="GerrySection">
 			<section id="about">
-				<div class="container">
+				<div class="container ger-accord">
 					<h2>About Gerry</h2>
-            <div id="accordion">
-                <h3>Bio</h3>
-                <div>
-                    <p>Gerry was born in 1977 and holds a diploma in Engineering Design and Drafting Technology. After 18 years in the oilfield, he transitioned into computer programming and is currently pursuing formal education in the field.</p>
-                </div>
-                <h3>Fun Facts</h3>
-                <div>
-                    <ul>
-                        <li>Enjoys sci-fi books</li>
-                        <li>Loves tinkering with old tech</li>
-                        <li>Dreams of building a game one day</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <div id="skills-tabs">
-                <ul>
-                    <li><a href="#tabs-1">Languages</a></li>
-                    <li><a href="#tabs-2">Tools</a></li>
-                </ul>
-                <div id="tabs-1">
-                    <ul>
-                        <li>JavaScript</li>
-                        <li>HTML5 & CSS3</li>
-                        <li>Python</li>
-                        <li>C#</li>
-                        <li>Java</li>
-                    </ul>
-                </div>
-                <div id="tabs-2">
-                    <ul>
-                        <li>MySQL</li>
-                        <li>VS Code</li>
-                        <li>Git & GitHub</li>
-                        <li>Figma</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+					<div id="accordion">
+						<h3>Bio</h3>
+						<div>
+							<p>
+								Gerry was born in 1977 he holds a college
+								diploma in Engineering Design and Drafting
+								Technology, which he only did as a career for 5
+								years before working in the oilfield for 18
+								years. Wanting to change careers Gerry's
+								interest shifted toward computer programming,
+								prompting him to embark on a journey of
+								self-learning to explore this new field. His
+								growing enthusiasm for coding eventually led him
+								to pursue formal education in computer
+								programming, highlighting his dedication to
+								adapting and expanding his skill set in an
+								ever-evolving technological landscape.
+							</p>
+						</div>
+						<h3>Fun Facts</h3>
+						<div>
+							<ul>
+								<li>Enjoys wood working</li>
+								<li>Loves animals</li>
+								<li>Can solve a rubiks cube</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="skills-gerry">
+				<div class="container ger-tabs">
+					<h2>Skills</h2>
+					<div id="skills-tabs">
+						<ul>
+							<li><a href="#tabs-1">Languages</a></li>
+							<li><a href="#tabs-2">Tools</a></li>
+						</ul>
+						<div id="tabs-1">
+							<ul>
+								<li>JavaScript</li>
+								<li>HTML5 & CSS3</li>
+								<li>Python</li>
+								<li>C#</li>
+								<li>Java</li>
+							</ul>
+						</div>
+						<div id="tabs-2">
+							<ul>
+								<li>MySQL</li>
+								<li>VS Code</li>
+								<li>Git & GitHub</li>
+								<li>Figma</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
 
-			<section id="projects">
+			<section id="projects-gerry">
 				<div class="container">
 					<h2>Projects</h2>
-					<div class="project">
-						<h3>Project 1: Password Manager Keeper</h3>
+					<div id="proj-one" class="project fade-in-on-scroll">
+						<h3>Project 1:Totally Manageable New Tavern</h3>
 						<p>
-							I created a desktop password generator/keeper.
-							manager app. The app was developed by QT Designer
-							and python. Functions of the app include generating.
-							and storing a random password with letter, numbers
-							and symbols. When the add button is clicked the form
-							clears, the password is added to a .Json file. The
-							search function will allows to look for a password.
-							by the website entered when creating the password.
+							For this project, my role was to design and
+							implement the graphical user interface (GUI) for the
+							game using Tkinter. I created interactive windows
+							that allowed the user to navigate through the game's
+							story by selecting from various available options.
+							The use of loops, lists, dicts were implemented
+							along with error handling using try-except blocks to
+							manage invalid inputs gracefully and ensure a smooth
+							gameplay experience
 						</p>
 					</div>
+					<div class="carousel-container">
+						<h3>Project Screenshots</h3>
+						<div class="slick-carousel">
+							<div>
+								<img
+									src="resources/carousel_01.png"
+									alt="Screenshot 1"
+								/>
+							</div>
+							<div>
+								<img
+									src="resources/carousel_02.png"
+									alt="Screenshot 2"
+								/>
+							</div>
+							<div>
+								<img
+									src="resources/carousel_03.png"
+									alt="Screenshot 3"
+								/>
+							</div>
+							<div>
+								<img
+									src="resources/carousel_04.png"
+									alt="Screenshot 4"
+								/>
+							</div>
+							<div>
+								<img
+									src="resources/carousel_05.png"
+									alt="Screenshot 5"
+								/>
+							</div>
+							<div>
+								<img
+									src="resources/carousel_06.png"
+									alt="Screenshot 6"
+								/>
+							</div>
+						</div>
+					</div>
+
 					<div class="project">
-						<h3>Project 2: Card Counter</h3>
+						<h3>Project 2: Password Manager Keeper</h3>
 						<p>
 							With HTML, CSS, and JS self self-learning I
 							developed a card counting web app, which would count
@@ -114,7 +184,7 @@
 		</div>
 
 		<div class="ChaseSection">
-			<section id="about">
+			<section id="about-chase">
 				<div class="container">
 					<h2>About Chase</h2>
 					<p>
@@ -130,7 +200,7 @@
 				</div>
 			</section>
 
-			<section id="skills">
+			<section id="skills-chase">
 				<div class="container">
 					<h2>Skills</h2>
 					<ul>
@@ -167,7 +237,7 @@
 				</div>
 			</section>
 
-			<section id="projects">
+			<section id="projects-chase">
 				<div class="container">
 					<h2>Projects</h2>
 					<div class="project">
@@ -205,7 +275,7 @@
 		</div>
 
 		<div class="GageSection">
-			<section id="about">
+			<section id="about-gage">
 				<div class="container">
 					<h2>About Gage</h2>
 					<p>
@@ -221,7 +291,7 @@
 				</div>
 			</section>
 
-			<section id="skills">
+			<section id="skills-gage">
 				<div class="container">
 					<h2>Skills</h2>
 					<ul>
@@ -234,7 +304,7 @@
 				</div>
 			</section>
 
-			<section id="projects">
+			<section id="projects-gage">
 				<div class="container">
 					<h2>Projects and Experiences</h2>
 					<div class="project">
@@ -266,10 +336,10 @@
 				<p>&copy; 2025 Cool Guy Productions. All rights reserved.</p>
 			</div>
 		</footer>
-            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
-    <script src="script.js"></script>
+
+		<!-- Slick JS -->
+		<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+		<script src="script.js"></script>
 	</body>
 </html>
