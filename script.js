@@ -67,6 +67,12 @@ $(document).ready(function () {
 		});
 	}
 
+	// === Slide-Down on click ===
+	$('#wildie-about').click(function() {
+		$('#youtube').attr('src', 'https://www.youtube.com/embed/zkI6ZQGWea4?start=0');
+		$('#tww-video').slideDown();
+	})
+
 	$(window).on('scroll', revealOnScroll);
 	revealOnScroll(); // Trigger on load
 });
