@@ -97,3 +97,15 @@ $(document).ready(function () {
 	$(window).on('scroll', revealOnScroll);
 	revealOnScroll(); // Trigger on load
 });
+
+// Contact Submission 
+
+function SubmitContact(Contact) {
+
+	if (Contact = Chase) {
+		NameField = $(".ChaseNameField")
+		EmailField = $("ChaseEmailField")
+		TextField = $("ChaseMessageField")
+	}
+
+}

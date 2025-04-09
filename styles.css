@@ -186,7 +186,7 @@ form label {
 }
 
 form input, form textarea {
-    width: 25%;
+    width: 50%;
     padding: 0.5em;
     margin-top: 0.3em;
     border: 1px solid #ccc;
@@ -350,4 +350,19 @@ footer p {
 .slick-prev:before, .slick-next:before {
 	color: white;
 	font-size: 20px;
+}
+
+.contact {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    align-self: center;
+    float: left;
+}
+
+textarea {
+    resize: none;
 }
