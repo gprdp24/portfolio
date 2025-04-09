@@ -1,4 +1,5 @@
-$(document).ready(function () {
+$( document ).ready( function () {
+	
 	// === Theme Toggle ===
 	$('#themeToggle').on('change', function () {
 		$('body').toggleClass('dark-mode');
@@ -8,36 +9,78 @@ $(document).ready(function () {
 	});
 
 	// === jQuery UI Widgets ===
-	$( '.accordion' ).accordion( {
+	$('.accordion').accordion({
 		collapsible: true,
 	});
-	$('#skills-tabs').tabs();
+	$('.skills-tabs').tabs();
 
 	// === jQuery UI Interaction ===
 	$('#draggable').draggable();
 
+	// === Form Validation ===
+	$('#contactForm').validate({
+		rules: {
+			name: 'required',
+			email: {
+				required: true,
+				email: true,
+			},
+			message: 'required',
+		},
+		messages: {
+			name: 'Please enter your name',
+			email: 'Please enter a valid email address',
+			message: 'Please enter your message',
+		},
+	});
 
 	// === AJAX: Fetch Motivational Quote ===
-	fetch('https://api.quotable.io/random')
-		.then((response) => response.json())
-		.then((data) => {
-			$('#quoteText').text(`\"${data.content}\" — ${data.author}`);
-		})
-		.catch(() => {
-			$('#quoteText').text('Could not load quote.');
+	
+$(document).ready(function () {
+	// Fetch quote on page load
+	fetchQuote();
+
+	// Fetch new quote when button is clicked
+	$('#newQuoteBtn').click(fetchQuote);
+
+	function fetchQuote() {
+		$('#quoteText').text('Loading...');
+		$('#quoteAuthor').text('');
+
+		$.ajax({
+			method: 'GET',
+			url: 'https://api.api-ninjas.com/v1/quotes',
+			headers: {
+				'X-Api-Key': 'yDyj9gH3X3Y84i3/jgMkSw==ChdrOKCS0o1M5ln0',
+			},
+			contentType: 'application/json',
+			success: function (result) {
+				if (result && result.length > 0) {
+					$('#quoteText').text(`"${result[0].quote}"`);
+					$('#quoteAuthor').text(`— ${result[0].author}`);
+				} else {
+					$('#quoteText').text('No quotes found.');
+				}
+			},
+			error: function (jqXHR) {
+				console.error('Error: ', jqXHR.responseText);
+				$('#quoteText').text('Failed to load quote. Please try again.');
+			},
 		});
+	}
+});
 
 	// === Slick Carousel Plugin ===
 
-	  $('.slick-carousel').slick({
-			arrows: true, // show prev/next arrows
-			dots: true, // show dots navigation
-			infinite: true,
-			slidesToShow: 1, // how many images at once
-			slidesToScroll: 1,
-			autoplay: false,
-			autoplaySpeed: 3000,
-		});
+	$('.slick-carousel').slick({
+		arrows: true, // show prev/next arrows
+		dots: true, // show dots navigation
+		infinite: true,
+		slidesToShow: 1, // how many images at once
+		slidesToScroll: 1,
+		autoplay: false,
+		autoplaySpeed: 3000,
+	});
 	// === Fade-In on Scroll ===
 	function revealOnScroll() {
 		$('.fade-in-on-scroll').each(function () {
