@@ -8,7 +8,9 @@ $(document).ready(function () {
 	});
 
 	// === jQuery UI Widgets ===
-	$('.accordion').accordion();
+	$( '#accordion' ).accordion( {
+		collapsible: true,
+	});
 	$('#skills-tabs').tabs();
 
 	// === jQuery UI Interaction ===
@@ -41,20 +43,20 @@ $(document).ready(function () {
 			$('#quoteText').text('Could not load quote.');
 		});
 
-	// === Smooth Scroll ===
-	$('a[href^="#"]').on('click', function (e) {
-		e.preventDefault();
-		$('html, body').animate(
-			{
-				scrollTop: $($(this).attr('href')).offset().top,
-			},
-			600
-		);
-	});
+	// === Slick Carousel Plugin ===
 
+	  $('.slick-carousel').slick({
+			arrows: true, // show prev/next arrows
+			dots: true, // show dots navigation
+			infinite: true,
+			slidesToShow: 1, // how many images at once
+			slidesToScroll: 1,
+			autoplay: false,
+			autoplaySpeed: 3000,
+		});
 	// === Fade-In on Scroll ===
 	function revealOnScroll() {
-		$('.fade-in').each(function () {
+		$('.fade-in-on-scroll').each(function () {
 			const elementTop = $(this).offset().top;
 			const scrollTop = $(window).scrollTop();
 			const windowHeight = $(window).height();
