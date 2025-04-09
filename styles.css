@@ -406,6 +406,12 @@ textarea {
     padding: 2em;
 }
 
+#backbutton {
+    padding: 20px;
+    background-color: grey;
+    margin-left: 10px;
+}
+
 /* style the container for the carousel for Chase */
 #chase-carousel {
     display: none;

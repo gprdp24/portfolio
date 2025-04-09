@@ -1,6 +1,10 @@
 $(document).ready(function () {
     $(".ErrorText").hide()
     $(".SuccessText").hide()
+
+    $("#backbutton").button({
+        icon: "ui-icon-caret-1-w"
+    })
 })
 
 function SubmitContact(Contact) {
