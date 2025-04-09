@@ -238,6 +238,12 @@ footer p {
 
 /* === Logo === */
 #CG2logo {
-    width: 75px;
-    align-self: left;
+    width: 80px;
+
 }
+
+#CG2Name {
+    font-size: 60px;
+    padding: 1%;
+}
+
