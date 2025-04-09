@@ -363,6 +363,11 @@ footer p {
 	font-size: 20px;
 }
 
+/* style the container for the carousel for Chase */
+#chase-carousel {
+    display: none;
+}
+
 /* style the container for our container that holds the video */
 #tww-video {
     display: none;

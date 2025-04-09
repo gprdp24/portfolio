@@ -75,7 +75,7 @@ $(document).ready(function () {
 			infinite: true,
 			slidesToShow: 1, // how many images at once
 			slidesToScroll: 1,
-			autoplay: false,
+			autoplay: true,
 			autoplaySpeed: 3000,
 		});
 	// === Fade-In on Scroll ===
@@ -91,11 +91,27 @@ $(document).ready(function () {
 		});
 	}
 
-	// === Slide-Down on click ===
-	$('#wildie-about').click(function() {
-		$('#youtube').attr('src', 'https://www.youtube.com/embed/zkI6ZQGWea4?start=0');
-		$('#tww-video').slideDown();
-	})
+	// === Slide up or down on click ===
+	$('#chase-tmnt').click(function() {
+		if ($('#chase-carousel').is(':visible')) {
+			$('#chase-carousel').slideUp();
+		}
+		else {
+			$('#chase-carousel').slideDown();
+			$('.slick-carousel').slick('setPosition');
+		}
+	});
+
+	$('#wildie-west').click(function() {
+		if ($('#tww-video').is(':visible')) {
+			$('#tww-video').slideUp();
+			$('#youtube').attr('src', '');
+		}
+		else {
+			$('#youtube').attr('src', 'https://www.youtube.com/embed/zkI6ZQGWea4?start=0');
+			$('#tww-video').slideDown();
+		}
+	});
 
 	$(window).on('scroll', revealOnScroll);
 	revealOnScroll(); // Trigger on load
