@@ -1,4 +1,5 @@
-$(document).ready(function () {
+$( document ).ready( function () {
+	
 	// === Theme Toggle ===
 	$('#themeToggle').on('change', function () {
 		$('body').toggleClass('dark-mode');
@@ -8,7 +9,7 @@ $(document).ready(function () {
 	});
 
 	// === jQuery UI Widgets ===
-	$( '.accordion' ).accordion( {
+	$('.accordion').accordion({
 		collapsible: true,
 	});
 	$('.skills-tabs').tabs();
@@ -118,3 +119,4 @@ $(document).ready(function () {
 	$(window).on('scroll', revealOnScroll);
 	revealOnScroll(); // Trigger on load
 });
+

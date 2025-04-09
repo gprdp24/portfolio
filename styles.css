@@ -32,6 +32,30 @@ body {
     background-color: #45a049;
 }
 
+#quoteAuthor {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #222;
+    margin-top: 1rem;
+}
+
+#newQuoteBtn {
+    margin-top: 20px;
+    margin-left: 50px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#newQuoteBtn:hover {
+    background-color: #45a049;
+}
+
 .container {
     max-width: 960px;
     margin: 0 auto;
@@ -177,7 +201,7 @@ form label {
 }
 
 form input, form textarea {
-    width: 25%;
+    width: 50%;
     padding: 0.5em;
     margin-top: 0.3em;
     border: 1px solid #ccc;
@@ -352,6 +376,34 @@ footer p {
 .slick-prev:before, .slick-next:before {
 	color: white;
 	font-size: 20px;
+}
+
+.contact {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    resize: none;
+}
+
+.ErrorText {
+    color: red;
+    font-size: small;
+}
+
+.SuccessText {
+    color: lime;
+    font-size: small;
+}
+
+.Contactcontainer {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 2em;
 }
 
 /* style the container for the carousel for Chase */
