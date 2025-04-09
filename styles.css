@@ -79,15 +79,7 @@ header p {
     font-size: 18px;
     color: #77aaff;
 }
-/* 
-header.sticky {
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    padding: 1em 0;
-    border-bottom: 1px solid #ccc;
-    background-color: inherit;
-} */
+
 
 /* === Light/Dark Theme === */
 body.dark-mode {
@@ -97,6 +89,7 @@ body.dark-mode {
 
 #themeLabel {
     color: #eee;
+    
 }
 
 body.dark-mode a {
@@ -105,15 +98,13 @@ body.dark-mode a {
 
 /* === Theme Toggle === */
 .theme-toggle-container {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    z-index: 1000;
+padding: 20px 30px;
+    background: #333;
     display: flex;
     align-items: center;
-    gap: 10px;
+    justify-content: flex-end;
+    gap: 15px;
 }
-
 .switch {
     position: relative;
     display: inline-block;
