@@ -33,15 +33,39 @@ $(document).ready(function () {
 		},
 	});
 
-	// === AJAX: Fetch Motivational Quote ===
-	fetch('https://api.quotable.io/random')
-		.then((response) => response.json())
-		.then((data) => {
-			$('#quoteText').text(`\"${data.content}\" — ${data.author}`);
-		})
-		.catch(() => {
-			$('#quoteText').text('Could not load quote.');
+$(document).ready(function () {
+	// Fetch quote on page load
+	fetchQuote();
+
+	// Fetch new quote when button is clicked
+	$('#newQuoteBtn').click(fetchQuote);
+
+	function fetchQuote() {
+		$('#quoteText').text('Loading...');
+		$('#quoteAuthor').text('');
+
+		$.ajax({
+			method: 'GET',
+			url: 'https://api.api-ninjas.com/v1/quotes',
+			headers: {
+				'X-Api-Key': 'yDyj9gH3X3Y84i3/jgMkSw==ChdrOKCS0o1M5ln0',
+			},
+			contentType: 'application/json',
+			success: function (result) {
+				if (result && result.length > 0) {
+					$('#quoteText').text(`"${result[0].quote}"`);
+					$('#quoteAuthor').text(`— ${result[0].author}`);
+				} else {
+					$('#quoteText').text('No quotes found.');
+				}
+			},
+			error: function (jqXHR) {
+				console.error('Error: ', jqXHR.responseText);
+				$('#quoteText').text('Failed to load quote. Please try again.');
+			},
 		});
+	}
+});
 
 	// === Slick Carousel Plugin ===
 

@@ -8,6 +8,30 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
+#quoteAuthor {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #222;
+    margin-top: 1rem;
+}
+
+#newQuoteBtn {
+    margin-top: 20px;
+    margin-left: 50px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#newQuoteBtn:hover {
+    background-color: #45a049;
+}
+
 .container {
     max-width: 960px;
     margin: 0 auto;
