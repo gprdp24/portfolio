@@ -37,6 +37,8 @@ $( document ).ready( function () {
 	// === AJAX: Fetch Motivational Quote ===
 	
 $(document).ready(function () {
+
+
 	// Fetch quote on page load
 	fetchQuote();
 
@@ -98,14 +100,3 @@ $(document).ready(function () {
 	revealOnScroll(); // Trigger on load
 });
 
-// Contact Submission 
-
-function SubmitContact(Contact) {
-
-	if (Contact = Chase) {
-		NameField = $(".ChaseNameField")
-		EmailField = $("ChaseEmailField")
-		TextField = $("ChaseMessageField")
-	}
-
-}
