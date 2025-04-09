@@ -154,13 +154,6 @@ button:hover, a:hover {
     transform: translateY(0);
 }
 
-/* === Contact Form === */
-form label {
-    display: block;
-    margin-top: 1em;
-    font-weight: bold;
-}
-
 form input, form textarea {
     width: 25%;
     padding: 0.5em;

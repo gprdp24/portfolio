@@ -16,22 +16,6 @@ $(document).ready(function () {
 	// === jQuery UI Interaction ===
 	$('#draggable').draggable();
 
-	// === Form Validation ===
-	$('#contactForm').validate({
-		rules: {
-			name: 'required',
-			email: {
-				required: true,
-				email: true,
-			},
-			message: 'required',
-		},
-		messages: {
-			name: 'Please enter your name',
-			email: 'Please enter a valid email address',
-			message: 'Please enter your message',
-		},
-	});
 
 	// === AJAX: Fetch Motivational Quote ===
 	fetch('https://api.quotable.io/random')
