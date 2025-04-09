@@ -14,7 +14,9 @@ $(document).ready(function () {
 	$('.skills-tabs').tabs();
 
 	// === jQuery UI Interaction ===
-	$('#draggable').draggable();
+	$('#CG2logo').draggable({
+		containment: '#CG2Name',
+	});
 
 	// === Form Validation ===
 	$('#contactForm').validate({
