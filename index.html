@@ -39,27 +39,29 @@
 		</div>
 		<header>
 			<div class="container" id="CG2Name">
-
-                <img src="resources/CG2 logo.png" alt="CG2 logo" id="CG2logo" />
-                Cool Guy Squared
+				<img src="resources/CG2 logo.png" alt="CG2 logo" id="CG2logo" />
+				Cool Guy Squared
 
 				<div id="drop-here"></div>
-				
-            </div>
+			</div>
 			<div class="container" id="quoteContainer">
 				<h3>Random Quote</h3>
-				        <div id="quoteDisplay">
-            <p id="quoteText">Loading quote...</p>
-            <p id="quoteAuthor"></p>
-        </div>
-        <button id="newQuoteBtn">Get New Quote</button>
+				<div id="quoteDisplay">
+					<p id="quoteText">Loading quote...</p>
+					<p id="quoteAuthor"></p>
+				</div>
+				<button id="newQuoteBtn">Get New Quote</button>
 			</div>
 		</header>
+		<!-- create a div to contain all info pertaining to Gerry -->
 		<div class="GerrySection">
+			<!-- this will be the about section for Gerry -->
 			<section id="about">
 				<div class="container ger-accord">
 					<h2>About Gerry</h2>
+					<!-- implement a class to create a reusable accordion -->
 					<div class="accordion">
+						<!-- this will be the first accordion tab -->
 						<h3>Bio</h3>
 						<div>
 							<p>
@@ -78,6 +80,7 @@
 								ever-evolving technological landscape.
 							</p>
 						</div>
+						<!-- this will be the second accordion tab -->
 						<h3>Fun Facts</h3>
 						<div>
 							<ul>
@@ -89,14 +92,17 @@
 					</div>
 				</div>
 			</section>
+			<!-- create a section for Gerry's's skills -->
 			<section id="skills-gerry">
 				<div class="container ger-tabs">
 					<h2>Skills</h2>
+					<!-- create a class in order to implement reusable tabs -->
 					<div class="skills-tabs">
 						<ul>
 							<li><a href="#tabs-1">Languages</a></li>
 							<li><a href="#tabs-2">Tools</a></li>
 						</ul>
+						<!-- what the user sees after clicking on the first tab -->
 						<div id="tabs-1">
 							<ul>
 								<li>JavaScript</li>
@@ -106,6 +112,7 @@
 								<li>Java</li>
 							</ul>
 						</div>
+						<!-- what the user sees after clicking on the second tab -->
 						<div id="tabs-2">
 							<ul>
 								<li>MySQL</li>
@@ -117,10 +124,11 @@
 					</div>
 				</div>
 			</section>
-
+			<!-- create a section to showcase the projects Gerry has done -->
 			<section id="projects-gerry">
 				<div class="container">
 					<h2>Projects</h2>
+					<!-- create a clickable div for the first project for Gerry -->
 					<div id="proj-one" class="project fade-in-on-scroll">
 						<h3>Project 1:Totally Manageable New Tavern</h3>
 						<p>
@@ -136,142 +144,201 @@
 						</p>
 					</div>
 					<div class="carousel-container">
-						<h3>Project Screenshots</h3>
+						<h3 id='gerry-h3'>Project Screenshots</h3>
 						<div class="slick-carousel">
 							<div>
 								<img
 									src="resources/carousel_01.png"
-									alt="Screenshot 1"
+									alt="Bar Scene"
 								/>
 							</div>
 							<div>
 								<img
 									src="resources/carousel_02.png"
-									alt="Screenshot 2"
+									alt="Final Boss"
 								/>
 							</div>
 							<div>
 								<img
 									src="resources/carousel_03.png"
-									alt="Screenshot 3"
+									alt="Side Bar"
 								/>
 							</div>
 							<div>
 								<img
 									src="resources/carousel_04.png"
-									alt="Screenshot 4"
+									alt="Attic"
 								/>
 							</div>
 							<div>
 								<img
 									src="resources/carousel_05.png"
-									alt="Screenshot 5"
+									alt="Basement"
 								/>
 							</div>
 							<div>
 								<img
 									src="resources/carousel_06.png"
-									alt="Screenshot 6"
+									alt="VIP"
 								/>
 							</div>
 						</div>
 					</div>
-
-					<div class="project">
-						<h3>Project 2: Password Manager Keeper</h3>
-						<p>
-							With HTML, CSS, and JS self self-learning I
-							developed a card counting web app, which would count
-							cards to win in Blackjack. Radio buttons for the
-							number of decks being used, then the user would
-							input the cards delt to himself and the dealer. With
-							JavaScript I developed algorithms to count the cards
-							and let the user know when to up or down their bet.
-							It was meant for people who know at least the basic
-							strategy for playing Blackjack.
+<br>
+<br>
+					<!-- when hover <p> gets bigger and backcolor change -->
+						<div id="proj-two" class="project fade-in-on-scroll">
+							<h3>Project 2: Password Manager Manager</h3>
+						<!-- when click <p> carousel slides open -->
+						<p id='click-this'>
+							For our final c# project, we’ve created a personal
+							password management system that enables users to
+							generate, store, and access their passwords
+							securely. The application offers customizable
+							password generation, allowing users to adjust
+							settings such as length, character types (uppercase,
+							numbers, symbols), and other security preferences.
+							All stored passwords are securely saved in a JSON
+							file, ensuring both easy retrieval and data
+							protection.
 						</p>
+						<br>
+						<br>
+						<div id='gerry-carousel' class="carousel-container">
+							<h3 id='gerry-h3'>Project Screenshots</h3>
+							<div class="slick-carousel">
+								<div>
+									<img id='gerry-img'
+										src="resources/carousel_07.png"
+										alt="Welcome Window Light Mode"
+									/>
+								</div>
+								<div>
+									<img id='gerry-img'
+										src="resources/carousel_08.png"
+										alt="Welcome Window Dark Mode"
+									/>
+								</div>
+								<div>
+									<img id='gerry-img'
+										src="resources/carousel_09.png"
+										alt="Add New Password Window Light Mode"
+									/>
+								</div>
+								<div>
+									<img id='gerry-img'
+										src="resources/carousel_10.png"
+										alt="Add New Password Window Dark Mode"
+									/>
+								</div>
+								<div>
+									<img id='gerry-img'
+										src="resources/carousel_11.png"
+										alt="Search Password Window Light Mode"
+									/>
+								</div>
+								<div>
+									<img id='gerry-img'
+										src="resources/carousel_12.png"
+										alt="Search Password Window Dar` Mode"
+									/>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
 		</div>
 
 		<!-- create a div to contain all info pertaining to Chase -->
-        <div class="ChaseSection">
-            <!-- this will be the about section for Chase -->
+		<div class="ChaseSection">
+			<!-- this will be the about section for Chase -->
 			<section id="about-chase">
 				<div class="container">
 					<h2>About Chase</h2>
-                    <!-- implement a class to create a reusable accordion -->
-                    <div class="accordion">
-                        <!-- this will be the first accordion tab -->
-                        <h3>Bio</h3>
-                        <div>
-                            <p>
-                                Chase is a professinal communicator. He has spent a good
-                                portion of his life working in radio broadcasting, doing
-                                everyting from working on street teams, to hosting his
-                                own shows. He also has done work for many different
-                                podcasts, including hosting and producing much of the
-                                content for The Wildie West, a new podcast project that
-                                has helped to create dialogue for Alberta's Mountain
-                                Horses.
-                            </p>
-                        </div>
-                        <!-- this will be the second accordion tab -->
-                        <h3>Fun Facts</h3>
-                        <div>
-                            <ul>
-                                <li>Hosts a successful podcast.</li>
-                                <li>Became a father to his second son this semester.</li>
-                                <li>Currently works in radio.</li>
-                            </ul>
-                        </div>
-                    </div>
+					<!-- implement a class to create a reusable accordion -->
+					<div class="accordion">
+						<!-- this will be the first accordion tab -->
+						<h3>Bio</h3>
+						<div>
+							<p>
+								Chase is a professinal communicator. He has
+								spent a good portion of his life working in
+								radio broadcasting, doing everyting from working
+								on street teams, to hosting his own shows. He
+								also has done work for many different podcasts,
+								including hosting and producing much of the
+								content for The Wildie West, a new podcast
+								project that has helped to create dialogue for
+								Alberta's Mountain Horses.
+							</p>
+						</div>
+						<!-- this will be the second accordion tab -->
+						<h3>Fun Facts</h3>
+						<div>
+							<ul>
+								<li>Hosts a successful podcast.</li>
+								<li>
+									Became a father to his second son this
+									semester.
+								</li>
+								<li>Currently works in radio.</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</section>
 
 			<!-- create a section for Chase's skills -->
-            <section id="skills-chase">
+			<section id="skills-chase">
 				<div class="container">
 					<h2>Skills</h2>
-                    <!-- create a class in order to implement reusable tabs -->
-                    <div class="skills-tabs">
-                        <!-- the tabs to be clicked by the user of the website -->
-                        <ul>
-                            <li><a href="#lang-tab">Languages</a></li>
-                            <li><a href="#other-tab">Other Skills</a></li>
-                        </ul>
-                        <!-- what the user sees after clicking on the first tab -->
-                        <div id="lang-tab">
-                            <ul>
-                                <li>Javascript</li>
-                                <li>HTML5</li>
-                                <li>CSS3</li>
-                                <li>Python</li>
-                                <li>C#</li>
-                                <li>Java</li>
-                            </ul>
-                        </div>
-                        <!-- what the user sees after clicking on the second tab -->
-                        <div id="other-tab">
-                            <ul>
-                                <li>MySQL</li>
-                                <li>Proficient in presenting.</li>
-                                <li>Worked comission based sales for years.</li>
-                                <li>Proficient in interacting with customers.</li>
-                                <li>Spent many years working in radio broadcasting.</li>
-                                <li>Is able to build a professional home studio for recording.</li>
-                            </ul>
-                        </div>
-                    </div>
+					<!-- create a class in order to implement reusable tabs -->
+					<div class="skills-tabs">
+						<!-- the tabs to be clicked by the user of the website -->
+						<ul>
+							<li><a href="#lang-tab">Languages</a></li>
+							<li><a href="#other-tab">Other Skills</a></li>
+						</ul>
+						<!-- what the user sees after clicking on the first tab -->
+						<div id="lang-tab">
+							<ul>
+								<li>Javascript</li>
+								<li>HTML5</li>
+								<li>CSS3</li>
+								<li>Python</li>
+								<li>C#</li>
+								<li>Java</li>
+							</ul>
+						</div>
+						<!-- what the user sees after clicking on the second tab -->
+						<div id="other-tab">
+							<ul>
+								<li>MySQL</li>
+								<li>Proficient in presenting.</li>
+								<li>Worked comission based sales for years.</li>
+								<li>
+									Proficient in interacting with customers.
+								</li>
+								<li>
+									Spent many years working in radio
+									broadcasting.
+								</li>
+								<li>
+									Is able to build a professional home studio
+									for recording.
+								</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</section>
 
 			<!-- create a section to showcase the projects Chase has done -->
-            <section id="projects-chase">
+			<section id="projects-chase">
 				<div class="container">
 					<h2>Projects</h2>
-                    <!-- create a clickable div for the first project for Chase -->
+					<!-- create a clickable div for the first project for Chase -->
 					<div id="chase-tmnt" class="project fade-in-on-scroll">
 						<h3>Project 1: Totally Manageable New Tavern</h3>
 						<p>
@@ -285,23 +352,32 @@
 							and more combat options in general, but we ran out
 							of time before we could fully test it.
 						</p>
-                        <!-- create a div to be slid down or up when the main div is clicked -->
-                        <div id="chase-carousel" class="carousel-container">
-                            <h3>Project Screenshots</h3>
-                            <div class="slick-carousel">
-                                <div>
-                                    <img src="./resources/room-code.png" alt="An example of the skeleton code used to create rooms.">
-                                </div>
-                                <div>
-                                    <img src="./resources/direction-example.png" alt="An example of the skeleton code used for navigation.">
-                                </div>
-                                <div>
-                                    <img src="./resources/scene-example.png" alt="An example of dialog.">
-                                </div>
-                            </div>
-                        </div>
+						<!-- create a div to be slid down or up when the main div is clicked -->
+						<div id="chase-carousel" class="carousel-container">
+							<h3>Project Screenshots</h3>
+							<div class="slick-carousel">
+								<div>
+									<img
+										src="./resources/room-code.png"
+										alt="An example of the skeleton code used to create rooms."
+									/>
+								</div>
+								<div>
+									<img
+										src="./resources/direction-example.png"
+										alt="An example of the skeleton code used for navigation."
+									/>
+								</div>
+								<div>
+									<img
+										src="./resources/scene-example.png"
+										alt="An example of dialog."
+									/>
+								</div>
+							</div>
+						</div>
 					</div>
-                    <!-- create a clickable div for the second project for Chase -->
+					<!-- create a clickable div for the second project for Chase -->
 					<div id="wildie-west" class="project fade-in-on-scroll">
 						<h3>Project 2: The Wildie West</h3>
 						<p>
@@ -317,10 +393,15 @@
 							hoping to even get monetized by the start of next
 							season in January of next year.
 						</p>
-                        <!-- create a div to be slid down or up when the main div is clicked -->
-                        <div id="tww-video">
-                            <iframe id="youtube" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                        </div>
+						<!-- create a div to be slid down or up when the main div is clicked -->
+						<div id="tww-video">
+							<iframe
+								id="youtube"
+								frameborder="0"
+								allow="autoplay; encrypted-media"
+								allowfullscreen
+							></iframe>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -331,65 +412,66 @@
 				<div class="container">
 					<h2>About Gage</h2>
 					<div class="accordion">
-                        <h3>Bio</h3>
-                        <div>
-                            <p>
-                                
-                            </p>
-                        </div>
-                        <h3>Fun Facts</h3>
-                        <div>
-                            <p>
+						<h3>Bio</h3>
+						<div>
+							<p></p>
+						</div>
+						<h3>Fun Facts</h3>
+						<div>
+							<p></p>
+						</div>
+						<h3>Dogs</h3>
+						<div>
+							<div>
+								<div
+									class="card"
+									style="width: 20%; align-items: center"
+								>
+									<img
+										src="resources/brawn.jpg"
+										alt="Avatar"
+										style="width: 100%"
+									/>
+									<div class="container">
+										<h4><b>Brawn</b></h4>
+									</div>
+								</div>
 
-                            </p>
-                        </div>
-                        <h3>Dogs</h3>
-                        <div>
-                            <div>
-                                <div class="card" style="width: 20%; align-items: center;">
-                                    <img src="resources/brawn.jpg" alt="Avatar" style="width:100%">
-                                    <div class="container">
-                                      <h4><b>Brawn</b></h4>
-                        
-                                    </div>
-                                  </div>
-    
-                                  <div class="card" style="width: 20%;">
-                                    <img src="resources/emma.jpg" alt="Avatar" style="width:100%">
-                                    <div class="container">
-                                      <h4><b>Emma</b></h4>
-                        
-                                    </div>
-                                  </div>
-    
-                                  <div class="card" style="width: 20%;">
-                                    <img src="resources/buffy.jpg" alt="Avatar" style="width:100%">
-                                    <div class="container">
-                                      <h4><b>Buffy</b></h4>
-                        
-                                    </div>
-                                  </div>
-    
-                                  <div class="card" style="width: 20%;">
-                                    <img src="resources/Ellie.jpg" alt="Avatar" style="width:100%">
-                                    <div class="container">
-                                      <h4><b>Ellie</b></h4>
-                        
-                                    </div>
-                                  </div>
+								<div class="card" style="width: 20%">
+									<img
+										src="resources/emma.jpg"
+										alt="Avatar"
+										style="width: 100%"
+									/>
+									<div class="container">
+										<h4><b>Emma</b></h4>
+									</div>
+								</div>
 
-                
+								<div class="card" style="width: 20%">
+									<img
+										src="resources/buffy.jpg"
+										alt="Avatar"
+										style="width: 100%"
+									/>
+									<div class="container">
+										<h4><b>Buffy</b></h4>
+									</div>
+								</div>
 
-                            </div>
-                           
-                        
-                      
-                            
-                           
-
-                        </div>
-
-                    </div>
+								<div class="card" style="width: 20%">
+									<img
+										src="resources/Ellie.jpg"
+										alt="Avatar"
+										style="width: 100%"
+									/>
+									<div class="container">
+										<h4><b>Ellie</b></h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 
@@ -436,7 +518,7 @@
 		<footer>
 			<div class="container">
 				<p>&copy; 2025 Cool Guy Productions. All rights reserved.</p>
-                <a href="ContactUs.html">Contact Us!</a>
+				<a href="ContactUs.html">Contact Us!</a>
 			</div>
 		</footer>
 

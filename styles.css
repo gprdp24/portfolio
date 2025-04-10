@@ -1,300 +1,319 @@
 /* === Base Styles === */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-    color: #333;
-    transition: background-color 0.3s, color 0.3s;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f5f5f5;
+	color: #333;
+	transition: background-color 0.3s, color 0.3s;
 }
 
 #quoteAuthor {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #222;
-    margin-top: 1rem;
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: #222;
+	margin-top: 1rem;
 }
 
 #newQuoteBtn {
-    margin-top: 20px;
-    margin-left: 50px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+	margin-top: 20px;
+	margin-left: 50px;
+	background-color: #4caf50;
+	color: white;
+	border: none;
+	padding: 0.8rem 1.5rem;
+	font-size: 1rem;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
 }
 
 #newQuoteBtn:hover {
-    background-color: #45a049;
-}
-
-#quoteAuthor {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #222;
-    margin-top: 1rem;
-}
-
-#newQuoteBtn {
-    margin-top: 20px;
-    margin-left: 50px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-#newQuoteBtn:hover {
-    background-color: #45a049;
+	background-color: #45a049;
 }
 
 .container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 2em;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 2em;
 }
 
-.ger-accord, .ger-tabs {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 2em;
+.ger-accord,
+.ger-tabs {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 2em;
 }
 
-h1, h2, h3 {
-    margin-bottom: 0.5em;
+h1,
+h2,
+h3 {
+	margin-bottom: 0.5em;
 }
 
 ul {
-    padding-left: 20px;
+	padding-left: 20px;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+	max-width: 100%;
+	height: auto;
+	transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#gerry-img {
+    	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: auto;
+	transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 /* === Header === */
 header {
-    background: #333;
-    color: #fff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #77aaff 3px solid;
+	background: #333;
+	color: #fff;
+	padding-top: 30px;
+	min-height: 70px;
+	border-bottom: #77aaff 3px solid;
 }
 
 header h1 {
-    float: left;
-    margin: 0;
+	float: left;
+	margin: 0;
 }
 
 header p {
-    float: left;
-    margin: 0;
-    padding-left: 20px;
-    font-size: 18px;
-    color: #77aaff;
+	float: left;
+	margin: 0;
+	padding-left: 20px;
+	font-size: 18px;
+	color: #77aaff;
 }
-
 
 /* === Light/Dark Theme === */
 body.dark-mode {
-    background-color: #121212;
-    color: #eee;
+	background-color: #333;
+	color: #eee;
+}
+
+body.dark-mode header {
+	color: #333;
+	background: #fff;
+}
+
+body.dark-mode #proj-one,
+body.dark-mode #proj-two {
+    	background-color: #333;
+	color: #eee;
+}
+
+body.dark-mode #proj-one:hover,
+body.dark-mode #proj-two:hover {
+	transform: scale(1.03);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	background-color: #78bef8;
 }
 
 #themeLabel {
-    color: #eee;
-    
+	color: #eee;
 }
 
 body.dark-mode a {
-    color: #90caf9;
+	color: #90caf9;
 }
 
 /* === Theme Toggle === */
 .theme-toggle-container {
-padding: 20px 30px;
-    background: #333;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 15px;
+	padding: 20px 30px;
+	background: #333;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 15px;
 }
 .switch {
-    position: relative;
-    display: inline-block;
-    width: 50px;
-    height: 24px;
+	position: relative;
+	display: inline-block;
+	width: 50px;
+	height: 24px;
 }
 
 .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
+	opacity: 0;
+	width: 0;
+	height: 0;
 }
 
 .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    transition: 0.4s;
-    border-radius: 24px;
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	transition: 0.4s;
+	border-radius: 24px;
 }
 
 .slider:before {
-    position: absolute;
-    content: "";
-    height: 18px;
-    width: 18px;
-    left: 3px;
-    bottom: 3px;
-    background-color: white;
-    transition: 0.4s;
-    border-radius: 50%;
+	position: absolute;
+	content: '';
+	height: 18px;
+	width: 18px;
+	left: 3px;
+	bottom: 3px;
+	background-color: white;
+	transition: 0.4s;
+	border-radius: 50%;
 }
 
 input:checked + .slider {
-    background-color: #2196f3;
+	background-color: #2196f3;
 }
 
 input:checked + .slider:before {
-    transform: translateX(26px);
+	transform: translateX(26px);
 }
 
 /* === Hover Effects === */
-button:hover, a:hover {
-    color: #2196f3;
-    transform: scale(1.05);
-}
-
+/* button:hover,
+a:hover {
+	color: red;
+	transform: scale(1.05);
+} */
 
 /* === Fade-in on Scroll === */
 .fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
+	opacity: 0;
+	transform: translateY(20px);
+	transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
 .fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
+	opacity: 1;
+	transform: translateY(0);
 }
 
 /* === Contact Form === */
 form label {
-    display: block;
-    margin-top: 1em;
-    font-weight: bold;
+	display: block;
+	margin-top: 1em;
+	font-weight: bold;
 }
 
-form input, form textarea {
-    width: 50%;
-    padding: 0.5em;
-    margin-top: 0.3em;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
+form input,
+form textarea {
+	width: 25%;
+	padding: 0.5em;
+	margin-top: 0.3em;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
 }
 
 form button {
-    margin-top: 1em;
-    padding: 0.7em 1.5em;
-    background-color: #2196f3;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+	margin-top: 1em;
+	padding: 0.7em 1.5em;
+	background-color: #2196f3;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
 }
 
 form button:hover {
-    background-color: #1976d2;
+	background-color: #1976d2;
 }
 
 /* === Sections === */
 section {
-    padding: 20px 0;
+	padding: 20px 0;
 }
 
 section h2 {
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
-section p, section ul {
-    font-size: 16px;
-    line-height: 1.8;
+section p,
+section ul {
+	font-size: 16px;
+	line-height: 1.8;
 }
 
 section ul {
-    list-style-type: none;
-    padding: 0;
+	list-style-type: none;
+	padding: 0;
 }
 
 section ul li {
-    background: #77aaff;
-    color: #fff;
-    padding: 10px;
-    margin-bottom: 5px;
-    border-radius: 5px;
+	background: #77aaff;
+	color: #fff;
+	padding: 10px;
+	margin-bottom: 5px;
+	border-radius: 5px;
 }
 
 /* === Projects === */
 .project {
-    background: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	background: #fff;
+	padding: 20px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#gerry-h3 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 20px 20px;
 }
 
 .project h3 {
-    margin-top: 0;
+	margin-top: 0;
 }
 
-#proj-one {
-    	transition: transform 0.3s ease, box-shadow 0.3s ease;
+#proj-one,
+#proj-two {
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
 	cursor: pointer;
 }
 
 #proj-one:hover {
-    	transform: scale(1.03);
+	/* This is to keep the cursor as an arrow so the user knows nothing happens when clicked */
+	cursor: default;
+}
+
+#proj-one:hover,
+#proj-two:hover {
+	transform: scale(1.03);
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    background-color: #78bef8;
+	background-color: #78bef8;
 }
 
 #chase-tmnt {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-cursor: pointer;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	cursor: pointer;
 }
 
 #chase-tmnt:hover {
-    transform: scale(1.03);
-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-background-color: #78bef8;
+	transform: scale(1.03);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	background-color: #78bef8;
 }
 
 #wildie-west {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-cursor: pointer;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	cursor: pointer;
 }
 
 #wildie-west:hover {
-    transform: scale(1.03);
-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-background-color: #78bef8;
+	transform: scale(1.03);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	background-color: #78bef8;
 }
 
 .fade-in-on-scroll {
@@ -310,37 +329,36 @@ background-color: #78bef8;
 
 /* === Footer === */
 footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+	background: #333;
+	color: #fff;
+	text-align: center;
+	padding: 10px 0;
+	margin-top: 20px;
 }
 
 footer p {
-    margin: 0;
+	margin: 0;
 }
 
 /* === Logo === */
 #CG2logo {
-    width: 80px;
-
+	width: 80px;
 }
 
 #CG2Name {
-    font-size: 60px;
-    padding: 1%;
+	font-size: 60px;
+	padding: 1%;
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    margin: 22px;
-    float:left;
-  }
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	transition: 0.3s;
+	margin: 22px;
+	float: left;
+}
 
 .ui-accordion .ui-accordion-content {
-    height: auto !important;
+	height: auto !important;
 }
 
 /* Optional: spacing/styling for the slick container */
@@ -349,8 +367,15 @@ footer p {
 	margin: 0 auto;
 }
 
+.slick-slide {
+	text-align: center;
+}
+
+
 /* Optional: round corners of slick images */
 .slick-slide img {
+    display: block;
+    margin: 0 auto;
 	border-radius: 12px;
 }
 
@@ -364,60 +389,25 @@ footer p {
 	color: #1976d2; /* Active dot */
 }
 
-/* Optional: style slick arrows */
-.slick-prev, .slick-next {
-	background-color: rgba(0, 0, 0, 0.5);
-	border-radius: 50%;
-	width: 40px;
-	height: 40px;
-	z-index: 2;
+/* Removes carousel arrows */
+.slick-prev,
+.slick-next {
+	display: none !important;
 }
 
-.slick-prev:before, .slick-next:before {
+.slick-prev:before,
+.slick-next:before {
 	color: white;
 	font-size: 20px;
 }
 
-.contact {
-    background: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-textarea {
-    resize: none;
-}
-
-.ErrorText {
-    color: red;
-    font-size: small;
-}
-
-.SuccessText {
-    color: lime;
-    font-size: small;
-}
-
-.Contactcontainer {
-    max-width: 480px;
-    margin: 0 auto;
-    padding: 2em;
-}
-
-#backbutton {
-    padding: 20px;
-    background-color: grey;
-    margin-left: 10px;
-}
-
 /* style the container for the carousel for Chase */
-#chase-carousel {
-    display: none;
+#chase-carousel,
+#gerry-carousel {
+	display: none;
 }
 
 /* style the container for our container that holds the video */
 #tww-video {
-    display: none;
+	display: none;
 }
