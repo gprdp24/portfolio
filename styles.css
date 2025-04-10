@@ -411,3 +411,8 @@ footer p {
 #tww-video {
 	display: none;
 }
+
+@media screen and (min-width: 480px) { }   /* Small phones */
+@media screen and (min-width: 768px) {  }   /* Tablets */
+@media screen and (min-width: 1024px) {  }  /* Small desktops */
+@media screen and (min-width: 1280px) {  }  /* Large desktops */
