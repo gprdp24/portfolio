@@ -205,7 +205,7 @@ form label {
 
 form input,
 form textarea {
-	width: 25%;
+	width: 100%;
 	padding: 0.5em;
 	margin-top: 0.3em;
 	border: 1px solid #ccc;
@@ -327,6 +327,36 @@ section ul li {
 	transform: translateY(0);
 }
 
+.Gage-Project:hover {
+	transform: scale(1.03);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	background-color: #78bef8;
+}
+
+/* === Footer === */
+
+.bread {
+	background-color: #f29333;
+}
+
+.cheese {
+	background-color: #f5ee8c;
+}
+
+.ham {
+	background-color: #ff5638;
+}
+
+.lettuce {
+	background-color: #72f067;
+}
+
+.cucumber {
+	background-color: #218000;
+}
+
+
+
 /* === Footer === */
 footer {
 	background: #333;
@@ -350,11 +380,49 @@ footer p {
 	padding: 1%;
 }
 
+
+/* === Dog cards === */
 .card {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	transition: 0.3s;
 	margin: 22px;
 	float: left;
+}
+
+/* === Contact form === */
+
+.contact {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    resize: none;
+}
+
+.ErrorText {
+    color: red;
+    font-size: small;
+}
+
+.SuccessText {
+    color: lime;
+    font-size: small;
+}
+
+.Contactcontainer {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+#backbutton {
+    padding: 20px;
+    background-color: grey;
+    margin-left: 10px;
 }
 
 .ui-accordion .ui-accordion-content {

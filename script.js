@@ -71,6 +71,12 @@ $(document).ready(function () {
 		}
 	});
 
+	// === Sortable Plugin, for sandwich ===
+
+	$( function() {
+		$( "#sortable" ).sortable();
+	  } );
+
 	// === Slick Carousel Plugin ===
 
 	$('.slick-carousel').slick({
