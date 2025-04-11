@@ -6,7 +6,6 @@ $(document).ready(function () {
 			$(this).is(':checked') ? 'Dark Mode' : 'Light Mode'
 		);
 	});
-
 	// === jQuery UI Widgets ===
 	$('.accordion').accordion({
 		collapsible: true,
@@ -73,9 +72,9 @@ $(document).ready(function () {
 
 	// === Sortable Plugin, for sandwich ===
 
-	$( function() {
-		$( "#sortable" ).sortable();
-	  } );
+	$(function () {
+		$('#sortable').sortable();
+	});
 
 	// === Slick Carousel Plugin ===
 
@@ -111,7 +110,7 @@ $(document).ready(function () {
 		}
 	});
 
-	$('#click-this').click(function (e) {
+	$('.click-this').click(function (e) {
 		if (e.target === this) {
 			if ($('#gerry-carousel').is(':visible')) {
 				$('#gerry-carousel').slideUp();
