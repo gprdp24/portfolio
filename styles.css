@@ -189,12 +189,6 @@ input:checked + .slider:before {
 	transform: translateX(26px);
 }
 
-/* === Hover Effects === */
-/* button:hover,
-a:hover {
-	color: red;
-	transform: scale(1.05);
-} */
 
 /* === Fade-in on Scroll === */
 .fade-in {

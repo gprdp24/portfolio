@@ -40,28 +40,39 @@ $(document).ready(function () {
 
 		// Fetch new quote when button is clicked
 		$('#newQuoteBtn').click(fetchQuote);
-
+// This is displayed until the quote is fetched from the API
 		function fetchQuote() {
 			$('#quoteText').text('Loading...');
 			$('#quoteAuthor').text('');
-
+			// API Ninjas required me to sign up to get this one free
+			// Make an AJAX GET request to the API Ninjas Quotes endpoint
 			$.ajax({
-				method: 'GET',
-				url: 'https://api.api-ninjas.com/v1/quotes',
+				method: 'GET', // HTTP method used for the request
+				url: 'https://api.api-ninjas.com/v1/quotes', // API endpoint to fetch a random quote
 				headers: {
+					// Required API key for authentication
 					'X-Api-Key': 'yDyj9gH3X3Y84i3/jgMkSw==ChdrOKCS0o1M5ln0',
 				},
+
+				// Specify the type of data expected from the server
 				contentType: 'application/json',
+
 				success: function (result) {
+					// Check if a valid result is returned and it contains at least one quote
 					if (result && result.length > 0) {
+						// Display the quote text and author in designated HTML elements
 						$('#quoteText').text(`"${result[0].quote}"`);
 						$('#quoteAuthor').text(`— ${result[0].author}`);
 					} else {
+						// Handle case where the response does not contain any quotes
 						$('#quoteText').text('No quotes found.');
 					}
 				},
-				error: function (jqXHR) {
+				// Callback function executed if the request fails
+				error: function ( jqXHR ) {
+					// Log the error details to the console for debugging
 					console.error('Error: ', jqXHR.responseText);
+					// Display a fallback message to inform the user of the failure
 					$('#quoteText').text(
 						'Failed to load quote. Please try again.'
 					);
@@ -100,7 +111,7 @@ $(document).ready(function () {
 		});
 	}
 
-	// === Slide up or down on click ===
+	// === Slide up or down on click  for chase ===
 	$('#chase-tmnt').click(function () {
 		if ($('#chase-carousel').is(':visible')) {
 			$('#chase-carousel').slideUp();
@@ -109,7 +120,8 @@ $(document).ready(function () {
 			$('.slick-carousel').slick('setPosition');
 		}
 	});
-
+	
+	// === Slide up or down on click  for gerry ===
 	$('.click-this').click(function (e) {
 		if (e.target === this) {
 			if ($('#gerry-carousel').is(':visible')) {
@@ -120,7 +132,8 @@ $(document).ready(function () {
 			}
 		}
 	});
-
+	
+	// === Function to watch youtube video ===
 	$('#wildie-west').click(function () {
 		if ($('#tww-video').is(':visible')) {
 			$('#tww-video').slideUp();
